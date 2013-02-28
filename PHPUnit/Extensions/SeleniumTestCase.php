@@ -1,4 +1,4 @@
-<?php
+<?Php
 /**
  * PHPUnit
  *
@@ -151,6 +151,7 @@ abstract class PHPUnit_Extensions_SeleniumTestCase extends PHPUnit_Framework_Tes
     {
         $params = array('http' => array(
                   'method' => 'POST',
+                  'header' => 'Content-Type: application/x-www-form-urlencoded; charset=UTF-8',
                   'content' => $data
                 ));
         $ctx = stream_context_create($params);
